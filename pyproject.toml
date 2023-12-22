@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "aortaseg"
+version = "0.1.0"
+description = "U-Net image segmentation for aorta"
+authors = ["Jose Alonso Solis-Lemus <j.solis-lemus@imperial.ac.uk>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = {version = "^1.26.2", python = "3.10"}
+pandas = {version = "^2.1.4", python = "3.10"}
+simpleitk = {version = "^2.3.1", python = "3.10"}
+nibabel = {version = "^5.2.0", python = "3.10"}
+torch = {version = "^2.1.2", python = "3.10"}
+torchvision = {version = "^0.16.2", python = "3.10"}
+torchio = {version = "^0.19.3", python = "3.10"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
